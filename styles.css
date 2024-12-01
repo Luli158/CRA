@@ -1,0 +1,188 @@
+/* General */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: #000000;
+}
+
+header {
+  min-height: 80px;
+  position: fixed; /* Fija el header en la parte superior */
+  top: 0; /* Se asegura de que esté pegado al borde superior */
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-image: url('fondo-nav.png'); /* Cambia esto por la ruta de tu imagen */
+  background-size: cover; /* Asegúrate de que la imagen cubra todo el área */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center; /* Centra la imagen */
+  color: white;
+}
+
+header .container {
+  display: flex;
+  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: space-between; /* Espacia los elementos horizontalmente */
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+
+header p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Marcas alineadas a la izquierda */
+#marcas {
+  display: flex;
+  gap: 10px; /* Espaciado entre las imágenes de marcas */
+}
+
+#marcas img {
+  max-height: 50px; /* Ajusta el tamaño de las imágenes de las marcas */
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+#marcas img:hover {
+  transform: scale(1.1); /* Efecto al pasar el mouse */
+}
+
+/* Logo centrado */
+.logo {
+  max-width: 100px; /* Tamaño máximo del logo */
+  margin: 8px;
+}
+
+/* Menú de navegación */
+/* Menú alineado a la derecha */
+.navbar-nav {
+  display: flex;
+  gap: 15px; /* Espaciado entre los enlaces */
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #222 !important;
+}
+
+.nav-link {
+  color: #ffffff !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #c00 !important;
+}
+
+/* Sección de Ofertas */
+#ofertas {
+  margin-top: 100px;
+  background: #000000;
+}
+
+#ofertas h2 {
+  color: #d6d4d4;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #222;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #cfcfcf;
+}
+
+.card .text-success {
+  color: #28a745 !important;
+}
+
+/* Sección de Productos */
+
+#productos {
+  background-image: url('fondo-nav.png'); /* Cambia esto por la ruta de tu imagen */
+  background-size: cover; /* Asegúrate de que la imagen cubra todo el área */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center; /* Centra la imagen */
+}
+
+#productos h2 {
+  color: #e6e6e6;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#productos h3 {
+  color: #c00;
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+#productos ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#productos ul li {
+  font-size: 1rem;
+  color: #bbbbbb;
+  margin-bottom: 5px;
+}
+
+#contacto {
+  background-color: #222;
+  color:#bbbbbb;
+}
+
+.whatsapp-link {
+  position: fixed; /* Fija el botón en la pantalla */
+  bottom: 20px; /* Distancia desde la parte inferior */
+  right: 20px; /* Distancia desde la parte derecha */
+  z-index: 1000; /* Asegúrate de que esté encima de otros elementos */
+  border-radius: 50%; /* Hace el botón redondo */
+  padding: 10px; /* Espaciado interno */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+  transition: transform 0.3s ease; /* Animación en hover */
+}
+
+.whatsapp-link:hover {
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el mouse */
+}
+
+.whatsapp-icon {
+  width: 60px; /* Tamaño del ícono */
+  height: 60px; /* Tamaño del ícono */
+}
+
+/* Pie de página */
+footer {
+  background-color: #222;
+  color: white;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #28a745;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #c00;
+  text-decoration: underline;
+}
